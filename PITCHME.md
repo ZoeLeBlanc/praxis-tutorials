@@ -1,9 +1,8 @@
 @title[Introduction to JavaScript]
 # Welcome to JavaScript  
-### The most magical thing on the internet 
 
 +++?image=https://media.giphy.com/media/xjXXTEFCuf4Jy/giphy.gif&size=auto 50%
-
+### The most magical thing on the internet 
 +++
 @title[So what is JavaScript?]
 # So what is JavaScript?
