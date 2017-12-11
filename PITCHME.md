@@ -2,7 +2,7 @@
 # Welcome to JavaScript  
 ### The most magical thing on the internet 
 
-+++?image=https://media.giphy.com/media/xjXXTEFCuf4Jy/giphy.gif
++++?image=https://media.giphy.com/media/xjXXTEFCuf4Jy/giphy.gif&size=auto 50%
 
 +++
 @title[So what is JavaScript?]
