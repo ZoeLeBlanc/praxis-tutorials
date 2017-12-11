@@ -31,3 +31,19 @@ touch main.css
 @[2-4](Then create an index.html, main.css, and main.js file)
 Note: Can anyone remember how to set up an initial index.html file?
 ---
+```
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <script src="main.js"></script>
+    </body>
+</html>
+```
+@[1](First DOCTYPE)
+@[2,10](Then html tags)
+@[3-6]()
+@[7-10]()
