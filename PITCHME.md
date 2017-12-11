@@ -7,7 +7,7 @@ Note: Welcome to JavaScript! IMHO the most magical thing on the internet. Gets a
 @title[So what is JavaScript?]
 # So what is JavaScript?
 - Initially introduced in 1995 for Netscape Navigator Browser 
-- Has nothing to do with Java (just named the same for marketing |
+- Has nothing to do with Java (just named the same for marketing) |
 - JavaScript standards are set by ECMA International, which is actually important because you'll here people referring to ES5, ES6, and ES7 which are versions of JavaScript standards |
 +++
 @title[So what is JavaScript?]
@@ -26,6 +26,6 @@ touch main.css
 ```
 
 @[1](First thing set up a directory on your computer)
-@[2,3](Then create an index.html, main.css, and main.js file)
+@[2,4](Then create an index.html, main.css, and main.js file)
 Note: Can anyone remember how to set up an initial index.html file?
 ---
