@@ -45,5 +45,8 @@ Note: Can anyone remember how to set up an initial index.html file?
 ```
 @[1](First DOCTYPE)
 @[2,10](Then html tags)
-@[3-6]()
-@[7-10]()
+@[3-6](Then head tags with the title and link to our stylesheet)
+@[7-9](Then body tags and this is where we connect our JavaScript file with a script tag)
+Note: Now we can start creating our first javascript file
+---
+
