@@ -1,7 +1,7 @@
 @title[Introduction to JavaScript]
 # Welcome to JavaScript  
 ### The most magical thing on the internet 
-![Harry Potter](https://media.giphy.com/media/xjXXTEFCuf4Jy/giphy.gif)
+---?image=https://media.giphy.com/media/xjXXTEFCuf4Jy/giphy.gif
 
 +++
 @title[So what is JavaScript?]
