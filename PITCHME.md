@@ -16,11 +16,16 @@ Note: Welcome to JavaScript! IMHO the most magical thing on the internet. Gets a
 Note: the other two being html & CSS which you guys have already started learning . So now that we have a baking analogy
 +++?image=https://media.giphy.com/media/5Sykf8G3M50kM/giphy.gif&size=80% auto
 Note: ready set bake! Today we're gonna go over some of the more common syntax you'll come across with JavaScript and how to bake your very own three layer standard web technology cake
-+++
-First thing set up a directory on your computer, you can call it whatever you want
+---
 
 ``` 
-git mkdir 'name of your directory'
+mkdir 'name of your directory'
+touch index.html
+touch main.js
+touch main.css
 ```
-@[1](Test)
-Note: bonus for those who can remember the git command
+
+@[1](First thing set up a directory on your computer)
+@[2,3](Then create an index.html, main.css, and main.js file)
+Note: Can anyone remember how to set up an initial index.html file?
+---
