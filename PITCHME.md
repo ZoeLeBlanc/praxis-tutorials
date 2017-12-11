@@ -11,7 +11,7 @@ Note: Any guess on the other two?
 Note: the other two being html & CSS which you guys have already started learning . So now that we have a baking analogy, Today we're gonna bake your very own three layer standard web technology cake and go over some of the more common syntax you'll come across with JavaScript. First though
 +++
 @title[So what is JavaScript?]
-# About JavaScript...
+#### About JavaScript...
 - Initially introduced in 1995 for Netscape Navigator Browser 
 - Has nothing to do with Java (just named the same for marketing) |
 - JavaScript standards are set by ECMA International, which is why developers often refer to new updates to JavaScript by their ECMAStandard Version (eg. ES5, ES6, and ES7) |
