@@ -18,6 +18,9 @@ Note: the other two being html & CSS which you guys have already started learnin
 Note: ready set bake! Today we're gonna go over some of the more common syntax you'll come across with JavaScript and how to bake your very own three layer standard web technology cake
 +++
 First thing set up a directory on your computer, you can call it whatever you want
-Note: bonus for those who can remember the git command
-``` git mkdir 'name of your directory' ```
+
+``` 
+git mkdir 'name of your directory'
+```
 @[1](Test)
+Note: bonus for those who can remember the git command
