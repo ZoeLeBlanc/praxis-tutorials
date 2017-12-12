@@ -1,30 +1,31 @@
-# Exercise 1: Sonnet
+# Exercise 1: Reindeer Games
 
 ## Requirements
 
-1. Paste the code below into your HTML file.
-1. Take the contents of the sonnet div and place it in a variable.
-1. Find and output the starting position of the word "orphans".
-1. Output the number of characters in the sonnet.
-1. Replace the first occurance of the string "winter" with "yuletide".
-1. Replace all occurances of the string "the" with "a large".
-1. Set the content of the sonnet div with the new string.
+Paste the following code into the `<body>` of the HTML file.
 
 ```
-<div id="sonnet">
-How like a winter hath my absence been
-From thee, the pleasure of the fleeting year!
-What freezings have I felt, what dark days seen!
-What old December's bareness everywhere!
-And yet this time removed was summer's time;
-The teeming autumn, big with rich increase,
-Bearing the wanton burden of the prime,
-Like widow'd wombs after their lords' decease:
-Yet this abundant issue seemed to me
-But hope of orphans, and unfathered fruit;
-For summer and his pleasures wait on thee,
-And, thou away, the very birds are mute:
-   Or, if they sing, 'tis with so dull a cheer,
-   That leaves look pale, dreading the winter's near.
-</div>
+<div id="reindeer"></div>
 ```
+
+Paste the following code into your JavaScript file.
+
+```
+var colors = ["Blue", "Red", "Orange", "Purple", "Hazel", "Aquamarine", "Periwinkle", "Azure", "Fuchsia", "Chocolate", "Amber", "Amaranth"];
+var reindeer = ["Dasher", "Dancer", "Prancer", "Vixen", "Comet", "Cupid", "Donner", "Blitzen"];
+
+
+var hohohoElement = document.getElementById("reindeer");
+```
+
+Your task is to loop through all the reindeer in the array, and add the name of the reindeer to the single HTML `<div>` element provided. The name of the reindeer should be prepended with the corresponding color from the other array.
+
+> **Example output:**  
+>  
+> Blue Dasher  
+>  
+> Red Dancer  
+>  
+> ...
+
+*Bonus points if you can get the div background to be the color of the reindeer. Hint: checkout adding inline styles to html*
