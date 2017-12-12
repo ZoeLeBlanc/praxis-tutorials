@@ -50,29 +50,62 @@ Note: Can anyone remember how to set up an initial index.html file?
 @[7-9](Then body tags and this is where we connect our JavaScript file with a script tag)
 Note: Now we can start creating our first javascript file
 ---
-add hello world to javascript file
-show them alert
-console log
+Two ways to easily add some JavaScript
+```
+//Create an alert
+alert('Hello World!');
+//Create a console.log
+console.log('Hello World!');
+```
+@[2]
+@[4]
 ---
-can also manipulate the DOM
-document get Element by Id
-insert html
+```
+// Add an element to the page using JavaScript. These are all statements.
+var div = document.getElementById('hello-world');
+var myHeading = document.createElement('h1');
+myHeading.textContent = 'Hello World!';
+div.append(myHeading);
+```
+@[2]
+@[3]
+@[4]
+@[5]
+Note: So how do we do this! Let's look at this example again
 ---
-So how do we do this!
-first thing is declaring a variable
-a few different ways but most common one you'll see is var equal sign followed by a value
-lots of different values
+```
+var div = document.getElementById('hello-world');
+var myHeading = document.createElement('h1');
+var test; 
+let test;
+const test;
+```
+@[1-2](This is called declaring a variable)
+@[3-5](JavaScript lets you create variables and assign them values)
 ---
-First strings
-length
-replace
-indexOf charAt
-toLowerCase
-toUpperCase
+#### First type of values: Strings
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String
+```
+var scholarsLab = 'Scholars Lab';
+console.log(scholarsLab.length);
+var scholarsLabUpperCase = scholarsLab.toUpperCase();
+var scholarsLabLowerCase = scholarsLab.toLowerCase();
+var lab = scholarsLab.indexOf('Lab');
+var s = scholarsLab.charAt(0).toLowerCase();
+```
 ---
-Numbers
-decimals, floats, integers
-operators +,-,/,%, * 
+#### Second type of values: Numbers
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number
+Three types: decimals, floats, integers
+```
+var int = parseInt('6');
+var float = parseFloat('3');
+var subtraction = int - float;
+var addition = int + float;
+var multiplication = int * float;
+var division = int / float;
+var modulus = int % float;
+```
 ---
 Arrays
 accessing values
