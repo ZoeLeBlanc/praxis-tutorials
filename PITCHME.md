@@ -50,4 +50,47 @@ Note: Can anyone remember how to set up an initial index.html file?
 @[7-9](Then body tags and this is where we connect our JavaScript file with a script tag)
 Note: Now we can start creating our first javascript file
 ---
+add hello world to javascript file
+show them alert
+console log
+---
+can also manipulate the DOM
+document get Element by Id
+insert html
+---
+So how do we do this!
+first thing is declaring a variable
+a few different ways but most common one you'll see is var equal sign followed by a value
+lots of different values
+---
+First strings
+length
+replace
+indexOf charAt
+toLowerCase
+toUpperCase
+---
+Numbers
+decimals, floats, integers
+operators +,-,/,%, * 
+---
+Arrays
+accessing values
+adding (push) removing (pop)
+filtering
+---
+Objects
+accessing properties
+---
+Booleans
+True or False
+set a variable to either of these or you can test them with methods
+---
+Conditional Statements
+if else
+logical operators
+for loops
+---
+Functions
+function arguments
 
