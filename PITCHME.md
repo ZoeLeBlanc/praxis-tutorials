@@ -40,7 +40,7 @@ Note: Can anyone remember how to set up an initial index.html file?
         <link rel="stylesheet" href="main.css">
     </head>
     <body>
-        <div id="hello-world></div>
+        <div id="hello-world"></div>
         <script src="main.js"></script>
     </body>
 </html>
@@ -144,8 +144,8 @@ var uva = {
 console.log(uva.location);
 console.log(uva['library']);
 ```
-@[1-3]
-@[4-5]
+@[1-4]
+@[5-6]
 ---
 #### Booleans
 True or False
@@ -164,7 +164,6 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if.
 if (javaScriptRocks) {
    alert("Congratulations!!");
 }
-
 if (uva.library !== 'Alderman') {
     console.log('uva is empty');
 } else if (uva['location'] === 'Richmond' && uva['library']==='Alderman') {
@@ -193,8 +192,8 @@ for (var i = 0; i < scholarsLabStaff.length; i++){
 }
 ```
 @[1-3]
-@[4-8]
-@[9-11]
+@[4-7]
+@[8-11]
 ---
 #### Functions
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function
@@ -214,4 +213,4 @@ function returnReverseName(array){
 returnReverseName(scholarsLabStaff);
 ```
 @[1-4]
-@[6-14]
+@[5-14]
