@@ -40,6 +40,7 @@ Note: Can anyone remember how to set up an initial index.html file?
         <link rel="stylesheet" href="main.css">
     </head>
     <body>
+        <div id="hello-world"></div>
         <script src="main.js"></script>
     </body>
 </html>
@@ -47,50 +48,169 @@ Note: Can anyone remember how to set up an initial index.html file?
 @[1](First DOCTYPE)
 @[2,10](Then html tags)
 @[3-6](Then head tags with the title and link to our stylesheet)
-@[7-9](Then body tags and this is where we connect our JavaScript file with a script tag)
+@[7-10](Then body tags and this is where we connect our JavaScript file with a script tag)
 Note: Now we can start creating our first javascript file
 ---
-add hello world to javascript file
-show them alert
-console log
+Two ways to easily add some JavaScript
+```
+//Create an alert
+alert('Hello World!');
+//Create a console.log
+console.log('Hello World!');
+```
+@[2]
+@[4]
 ---
-can also manipulate the DOM
-document get Element by Id
-insert html
+```
+// Add an element to the page using JavaScript. These are all statements.
+var div = document.getElementById('hello-world');
+var myHeading = document.createElement('h1');
+myHeading.textContent = 'Hello World!';
+div.append(myHeading);
+```
+@[2]
+@[3]
+@[4]
+@[5]
+Note: So how do we do this! Let's look at this example again
 ---
-So how do we do this!
-first thing is declaring a variable
-a few different ways but most common one you'll see is var equal sign followed by a value
-lots of different values
+```
+var div = document.getElementById('hello-world');
+var myHeading = document.createElement('h1');
+var test; 
+let test;
+const test;
+```
+@[1-2](This is called declaring a variable)
+@[3-5](JavaScript lets you create variables and assign them values)
 ---
-First strings
-length
-replace
-indexOf charAt
-toLowerCase
-toUpperCase
+#### Strings
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String
+```
+var scholarsLab = 'Scholars Lab';
+console.log("SLab length", scholarsLab.length);
+var scholarsLabUpperCase = scholarsLab.toUpperCase();
+var scholarsLabLowerCase = scholarsLab.toLowerCase();
+var lab = scholarsLab.indexOf('Lab');
+var s = scholarsLab.charAt(0).toLowerCase();
+```
+@[1-2]
+@[3-4]
+@[5-6]
+Note: Slab length 12, SCHOLARS LAB, scholars lab, 9, s
 ---
-Numbers
-decimals, floats, integers
-operators +,-,/,%, * 
+#### Numbers
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number
+Three types: decimals, floats, integers
+```
+var int = parseInt('6');
+var float = parseFloat('3');
+var subtraction = int - float;
+var addition = int + float;
+var multiplication = int * float;
+var division = int / float;
+var modulus = int % float;
+```
+@[1-2]
+@[3-7]
+Note: 3 9 18 2 0
 ---
-Arrays
-accessing values
-adding (push) removing (pop)
-filtering
+#### Arrays
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
+```
+var scholarsLabStaff = ['Brandon', 'Jeremy', 'Amanda'];
+console.log(scholarsLabStaff.length);
+console.log('Brandon', scholarsLabStaff[0]);
+scholarsLabStaff.push('Zoe');
+var moreStaff = ['Ammon', 'Shane'];
+scholarsLabStaff.concat(moreStaff);
+var ShaneGetsANewJob = scholarsLabStaff.pop();
+var Brandon = scholarsLabStaff.filter(function (person) {
+    return person === 'Brandon';
+});
+```
+@[1]
+@[2-3]
+@[4-7]
+@[8-10]
 ---
-Objects
-accessing properties
+#### Objects
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object
+```
+var uva = {
+    library: 'Alderman',
+    location: 'Charlottesville'
+};
+console.log(uva.location);
+console.log(uva['library']);
+```
+@[1-4]
+@[5-6]
 ---
-Booleans
+#### Booleans
 True or False
-set a variable to either of these or you can test them with methods
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean
+```
+var javaScriptRocks = true; // everything with a value is true
+var noValue = 0; //-0, "", x is undefined, null, NaN > everything without a value is false
+```
+@[1]
+@[2]
 ---
-Conditional Statements
-if else
-logical operators
+#### Conditional Statements
+if else if else
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else
+```
+if (javaScriptRocks) {
+   alert("Congratulations!!");
+}
+if (uva.library !== 'Alderman') {
+    console.log('uva is empty');
+} else if (uva['location'] === 'Richmond' && uva['library']==='Alderman') {
+    console.log('uva has moved');
+} else {
+    console.log('uva is not empty');
+}
+```
+@[1-3]
+@[4-5]
+@[6-7]
+@[8-10]
+---
 for loops
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/statements/for
+```
+for (var i = 0; i < 9; i++) {
+   console.log(i);
+}
+var loopCounter = 5;
+for (var x = 0; x < loopCounter; x++){
+    console.log(x);
+}
+for (var i = 0; i < scholarsLabStaff.length; i++){
+    console.log(scholarsLabStaff[i]);
+}
+```
+@[1-3]
+@[4-7]
+@[8-11]
 ---
-Functions
-function arguments
-
+#### Functions
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function
+```
+function example (firstArg, secondArg) {
+  console.log(firstArg, secondArg);
+}
+example('hi', 'world');
+function returnReverseName(array){
+    var newNames = [];
+    for (var i = 0; i < array.length; i++){
+        var name = array[i].split("").reverse().join("");
+        newNames.push(name);
+    }
+    return newNames;
+}
+returnReverseName(scholarsLabStaff);
+```
+@[1-4]
+@[5-14]
